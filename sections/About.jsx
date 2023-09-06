@@ -16,7 +16,6 @@ const About = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     >
-      <div className='gradient-03 z-0 relative' />
       <TypingText title='| About W&W' textStyles="text-center mb-5" />
       <motion.p
         variants={fadeIn('up', 'tween', 0.2, 1)}
