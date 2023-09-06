@@ -11,13 +11,14 @@ import Image from 'next/image';
 
 
 const GetStarted = () => (
-  <section className={`${styles.paddings} relative z-10 my-40`}>
+  <section className={`${styles.paddings} relative my-40`}>
+    <div className='gradient-04 z-0' />
     <motion.div
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
       viewport={{once: 'false', amount: 0.25}}
-      className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8 `}
+      className={`${styles.innerWidth}  z-10  mx-auto flex lg:flex-row flex-col gap-8 `}
     >
       <motion.div
         variants={planetVariants('left')}

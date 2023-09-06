@@ -8,13 +8,14 @@ import { InsightCard, TitleText, TypingText } from '../components';
 import { insights } from '../constants'
 
 const Insights = () => (
-  <section className={`${styles.paddings} relative z-10 my-40`}>
+  <section className={`${styles.paddings} relative  my-40`}>
+    <div className='gradient-03' />
     <motion.div
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
       viewport={{once: 'false', amount: 0.25}}
-      className={`${styles.innerWidth} mx-auto flex flex-col`}
+      className={`${styles.innerWidth} z-10 mx-auto flex flex-col`}
     >
       <TypingText title="| Articles" textStyles={"text-center"} />
       <TitleText title="Articles from W&W" textStyles={"text-center"} />
