@@ -7,7 +7,7 @@ import { fadeIn, slideIn, staggerContainer, textVariant } from '../utils/motion'
 import Image from 'next/image';
 
 const Hero = () => (
-  <section className={`${styles.yPaddings} sm:pl-16 pl-6 -mt-20 z-20`}>
+  <section className={`${styles.yPaddings} sm:pl-16 pl-6 lg:-mt-20 z-20`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
