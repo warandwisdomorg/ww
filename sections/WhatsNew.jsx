@@ -6,6 +6,7 @@ import styles from '../styles';
 import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
 import { NewFeatures, TitleText, TypingText } from '../components';
 import { newFeatures } from '../constants'
+import Image from 'next/image';
 
 
 
@@ -23,7 +24,7 @@ const WhatsNew = () => (
         className="flex-[0.75] flex justify-center flex-col"
         >
           <TypingText title="| What's New" />
-          <TitleText title={<>What's new about Metaversus</>} />
+          <TitleText title={<>What's new about W&W</>} />
           <div className='mt-[48px] flex flex-wrap justify-between gap-[24px]'>
             {newFeatures.map((item) => (
               <NewFeatures 
@@ -37,7 +38,9 @@ const WhatsNew = () => (
         variants={planetVariants('right')}
         className={`flex-1 ${styles.flexCenter}`}
       >
-        <img 
+        <Image 
+          width={500}
+          height={500}
           src="/whats-new.png" 
           alt="whats-new" 
           className='w-[90%] h-[90%] object-contain' 

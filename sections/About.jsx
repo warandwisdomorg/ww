@@ -8,7 +8,7 @@ import { fadeIn, staggerContainer } from '../utils/motion';
 
 
 const About = () => (
-  <section className={`${styles.paddings} relative z-10`}>
+  <section className={`${styles.paddings} relative z-10 mb-28`}>
     <div className='gradient-02 z-0'/>
     <motion.div
       variants={staggerContainer}
@@ -17,12 +17,29 @@ const About = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     >
-      <TypingText title='| About Metaversus' textStyles="text-center" />
+      <TypingText title='| About W&W' textStyles="text-center mb-5" />
       <motion.p
         variants={fadeIn('up', 'tween', 0.2, 1)}
         className='mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white'
       >
-        <span className="font-extrabold text-white">Metaverse</span> is a new thing in the future, where you can enjoy the virtual world by feeling like it's really real, you can feel what you feel in this metaverse world, because this is really the <span className="font-extrabold text-white">madness of the metaverse</span> of today, using only <span className="font-extrabold text-white">VR</span> devices you can easily explore the metaverse world you want, turn your dreams into reality. Let's <span className="font-extrabold text-white">explore</span> the madness of the metaverse by scrolling down.
+
+        Welcome to <span className="font-extrabold text-white">War and Wisdom</span>, your gateway to a world of knowledge, intrigue, and enlightenment. Our channel is your destination for a captivating exploration of history, politics, wars, and intellectual discourse.
+        <br />
+        <br />
+        🕰 Journey Through Time: Delve into the annals of history with us as we unravel the mysteries of the past. From ancient civilizations to modern revolutions, our videos transport you through time to discover the profound events that have shaped our world.
+        <br />
+        <br />
+        🗳 Unraveling Politics: Politics can be complex and enigmatic, but we break it down for you. Explore the intricate web of government, international relations, and political ideologies that influence our society today.
+        <br />
+        <br />
+        ⚔ The Art of Warfare: Discover the strategies, battles, and military leaders that have defined the course of human conflict. Our in-depth analyses shed light on the pivotal moments that have determined the fate of nations.
+        <br />
+        <br />
+        💡 Intellectual Discourse: Dive into the world of ideas, philosophy, and critical thinking. Our intellectual videos stimulate your mind and encourage you to engage in thoughtful conversations about the issues that matter.
+        <br />
+        <br />
+        Join our community of curious minds, history buffs, and thinkers as we embark on a quest for knowledge and understanding. Whether you're a student, a history enthusiast, or someone seeking a deeper insight into the world around us, <span className="font-extrabold text-white">War and Wisdom</span> has something to offer everyone.
+
       </motion.p>
 
       <motion.img

@@ -3,9 +3,10 @@
 import {motion} from 'framer-motion';
 import styles from '../styles';
 import { fadeIn, staggerContainer, zoomIn } from '../utils/motion';
+import Image from 'next/image';
 
 const Feedback = () => (
-  <section className={`${styles.paddings} relative z-10`}>
+  <section className={`${styles.paddings} relative z-10 my-40`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -19,26 +20,19 @@ const Feedback = () => (
       >
         <div className='feedback-gradient' />
         <div>
-          <h4 className='font-bold sm:text-[32px] text-[26px] sm:leading-[40px] leading-[36px] text-white'>Samantha</h4>
-          <p className='mt-[8px] font-normal sm:text-[18px] text-[12px] sm:leading-[22px] leading-[16px] text-white'>Founder | Metaversus </p>
+          <h4 className='font-bold sm:text-[32px] text-[26px] sm:leading-[40px] leading-[36px] text-white'>Ahmet Uyar</h4>
+          <p className='mt-[8px] font-normal sm:text-[18px] text-[12px] sm:leading-[22px] leading-[16px] text-white'>Founder | War and Wisdom </p>
         </div>
-        <p className='mt-[24px] font-normal sm:text-[24px] text-[18px] sm:leading-[45px] leading-[39px] text-white'>
-          “With the development of today's technology, metaverse is very useful for today's work, or can be called web 3.0. by using metaverse you can use it as anything”
+        <p className='font-normal sm:text-[24px] text-[18px] sm:leading-[45px] leading-[39px] text-white mb-10 mt-20'>
+          “Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore reiciendis assumenda ratione iste maiores sint fugiat! Tempora ipsam blanditiis explicabo!”
         </p>
       </motion.div>
-
+  
       <motion.div 
         variants={fadeIn('left', 'tween', 0.2, 1)}
         className='relative flex-1 flex justify-center items-center'
       >
-        <img src="/planet-09.png" alt="planet-09" className='w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]' />
-        
-        <motion.div
-          variants={zoomIn(0.4, 1)}
-          className='lg:block hidden absolute -left-[10%] top-[3%]'
-        >
-          <img src="/stamp.png" alt="stamp" className='w-[155px] h-[155px] object-contain' />
-        </motion.div>
+        <Image width={700} height={500} src="/planet-09.png" alt="planet-09" className='w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]' />
       </motion.div>
 
     </motion.div>
