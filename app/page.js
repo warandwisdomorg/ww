@@ -6,18 +6,21 @@ const Page = () => (
     <Navbar />
     <Hero />
     <About />
+    <div className='relative'>
+      <div className='gradient-04 z-0 '  />
+    </div>
     <Explore />
-    <div className="relative">
-      <GetStarted />
-      <div className='gradient-04 z-0'  />
-      <WhatsNew />
+    <GetStarted />
+    <div className='relative'>
+      <div className='gradient-04 z-0 '  />
     </div>
+    <WhatsNew />
     <World />
-    <div className="relative">
-      <Insights />
-      <div className='gradient-04 z-0'  />
-      <Feedback />
+    <Insights />
+    <div className='relative'>
+      <div className='gradient-04 z-0 '  />
     </div>
+    <Feedback />
     <Footer />
   </div>
 );
