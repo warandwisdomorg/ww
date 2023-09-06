@@ -4,12 +4,12 @@ import { motion } from 'framer-motion';
 import {TypingText} from '../components'
 
 import styles from '../styles';
-import { fadeIn, staggerContainer } from '../utils/motion';
+import { fadeIn, staggerContainer, textVariant } from '../utils/motion';
 
 
 const About = () => (
   <section className={`${styles.paddings} relative mb-28 z-10`}>
-    <div className='gradient-03' />
+    <div className='w-[50%] gradient-03 z-0' />
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -19,7 +19,7 @@ const About = () => (
     >
       <TypingText title='| About W&W' textStyles="text-center mb-5" />
       <motion.p
-        variants={fadeIn('up', 'tween', 0.2, 1)}
+        variants={textVariant(0.3)}
         className='mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white'
       >
         Welcome to <span className="font-extrabold text-white">War and Wisdom</span>, your gateway to a world of knowledge, intrigue, and enlightenment. Our channel is your destination for a captivating exploration of history, politics, wars, and intellectual discourse.

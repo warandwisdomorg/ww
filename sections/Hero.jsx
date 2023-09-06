@@ -7,7 +7,7 @@ import { fadeIn, slideIn, staggerContainer, textVariant } from '../utils/motion'
 import Image from 'next/image';
 
 const Hero = () => (
-  <section className={`${styles.yPaddings} sm:pl-16 pl-6 my-10 mb-40 z-20`}>
+  <section className={`${styles.yPaddings} sm:pl-16 pl-6 -mt-20 z-20`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -48,9 +48,8 @@ const Hero = () => (
       <div
         className='relative w-full md:-mt-[20px] -mt-[12px] justify-center items-center'
       >
-        <motion.div variants={slideIn('right', 'tween', 0.2, 1)} className='absolute w-full h-[200px] hero-gradient rounded-tl-[50%] lg:rounded-[140px] z-0 bottom-[60px]' />
         <motion.div
-          variants={slideIn('right', 'tween', 0.1, 1)}
+          variants={textVariant(1.2)}
           className=''
         >
           <div className='glassmorphism absolute w-full lg:h-[500px] h-[250px] object-cover rounded-tl-[50%] lg:rounded-[140px] z-10 -top-[90px]' />
@@ -62,9 +61,8 @@ const Hero = () => (
           />
         </motion.div>
       </div>
-
       <motion.div
-        variants={fadeIn('down', 'tween', 0.3, 1)}
+        variants={textVariant(1.2)}
         className='lg:hidden flex justify-center items-center text-center text-2xl mt-32 text-secondary-white'
       >
         Swipe down <Image className='ml-3' width={15} height={15} src={'/arrow-down.svg'} />
