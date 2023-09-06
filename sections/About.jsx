@@ -16,12 +16,12 @@ const About = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     >
+      <div className='gradient-03 z-0 relative' />
       <TypingText title='| About W&W' textStyles="text-center mb-5" />
       <motion.p
         variants={fadeIn('up', 'tween', 0.2, 1)}
         className='mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white'
       >
-
         Welcome to <span className="font-extrabold text-white">War and Wisdom</span>, your gateway to a world of knowledge, intrigue, and enlightenment. Our channel is your destination for a captivating exploration of history, politics, wars, and intellectual discourse.
         <br />
         <br />
