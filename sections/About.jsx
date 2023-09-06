@@ -10,11 +10,10 @@ import { fadeIn, staggerContainer, textVariant } from '../utils/motion';
 const About = () => (
   <section className={`${styles.paddings} relative mb-28 z-10`}>
     <div className='w-[50%] gradient-03 z-0' />
-    <motion.div
-      variants={staggerContainer}
+    <div
+      variants={textVariant(0.3)}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     >
       <TypingText title='| About W&W' textStyles="text-center mb-5" />
@@ -49,7 +48,7 @@ const About = () => (
       >
 
       </motion.img>
-    </motion.div>
+    </div>
   </section>
 );
 
