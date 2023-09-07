@@ -134,7 +134,7 @@ export default function DropdownMenu() {
                       active ? 'hero-gradient font-extrabold text-white' : 'text-gray-900'
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   >
-                    Join Our Comminity
+                    Join Our Community
                   </button>
                 )}
               </Menu.Item>
