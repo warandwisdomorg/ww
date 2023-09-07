@@ -7,7 +7,7 @@ import DropdownMenu from './DropdownMenu';
 
 const Navbar = () => (
   <nav className={`${styles.xPaddings} py-8 relative` }>
-    <div className="absolute w-[50%] inset-0 gradient-01" />
+    <div className="w-[50%] inset-0 gradient-01 hidden lg:absolute" />
       <div className={`${styles.innerWidth} mx-auto flex justify-between gap-8`} >
         <Image
           width={25} 
