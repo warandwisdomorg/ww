@@ -10,7 +10,7 @@ import { fadeIn, staggerContainer, textVariant } from '../utils/motion';
 const About = () => (
   <section className={`${styles.paddings} relative mb-28 z-10`}>
     <div className='w-[50%] gradient-03 z-0' />
-    <div
+    <motion.div
       variants={textVariant(0.3)}
       initial="hidden"
       whileInView="show"
@@ -48,7 +48,7 @@ const About = () => (
       >
 
       </motion.img>
-    </div>
+    </motion.div>
   </section>
 );
 
