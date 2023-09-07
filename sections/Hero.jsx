@@ -5,9 +5,10 @@ import { motion } from 'framer-motion';
 import styles from '../styles';
 import { fadeIn, slideIn, staggerContainer, textVariant } from '../utils/motion';
 import Image from 'next/image';
+import { socials } from '../constants';
 
 const Hero = () => (
-  <section className={`${styles.yPaddings} sm:pl-16 pl-6 lg:-mt-20 z-20`}>
+  <section className={`${styles.yPaddings} sm:py-16 lg:px-6 lg:-mt-20 z-20`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -28,9 +29,22 @@ const Hero = () => (
         >
           Lorem ipsum dolor sit amet consectetur.
         </motion.div>
+        <motion.div variants={textVariant(1.4)} className='flex gap-4'>
+          {socials.map((item) => (
+            <a className='mt-5' href={item.href} key={item.name}>
+              <Image
+              height={400} 
+              width={400}
+              src={item.url}
+              alt={item.name}
+              className='w-[35px] h-[35px] object-contain cursor-pointer'
+             />
+            </a>
+          ))}
+        </motion.div>
       </div>
       {/* sm devices title */}
-      <div className='flex lg:hidden justify-center items-center flex-col relative z-20 top-[80px]'>
+      <div className='flex lg:hidden justify-center items-center flex-col relative z-20 top-[100px]'>
         <motion.h1
           variants={textVariant(1.1)}
           className={`${styles.heroHeading} sm:text-sm`}
@@ -42,6 +56,19 @@ const Hero = () => (
           className='flex flex-row justify-center items-center text-secondary-white font-bold text-md'
         >
           Lorem ipsum dolor sit amet consectetur.
+        </motion.div>
+        <motion.div variants={textVariant(1.4)} className='flex gap-4'>
+          {socials.map((item) => (
+            <a className='mt-5' href={item.href} key={item.name}>
+              <Image
+              height={400} 
+              width={400}
+              src={item.url}
+              alt={item.name}
+              className='w-[25px] h-[25px] object-contain cursor-pointer'
+             />
+            </a>
+          ))}
         </motion.div>
       </div>
       
@@ -65,7 +92,7 @@ const Hero = () => (
         variants={textVariant(1.2)}
         className='lg:hidden flex justify-center items-center text-center text-2xl mt-32 text-secondary-white'
       >
-        Swipe down <Image className='ml-3' width={15} height={15} src={'/arrow-down.svg'} />
+        Swipe down <Image className='ml-3' alt='swipe down icon' width={15} height={15} src={'/arrow-down.svg'} />
       </motion.div>
 
     </motion.div>

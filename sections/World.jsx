@@ -22,8 +22,8 @@ const World = () => (
     >
       <TypingText title="| People on the world" textStyles={"text-center"} />
       <TitleText title={<>
-        <a href="#">
-          Join our <BsDiscord className='inline-flex mx-5' /> server, where people from all around the world come together. Come and take your place!
+        <a href="https://discord.com/invite/Uf5YjQwx26">
+          Join our <BsDiscord className='inline-flex mx-5' />, where people from all around the world come together. Come and take your place!
         </a>
       </>} textStyles={"text-center"} />
 

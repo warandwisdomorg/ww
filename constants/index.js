@@ -2,27 +2,27 @@ export const exploreWorlds = [
   {
     id: 'world-1',
     imgUrl: '/planet-01.png',
-    title: 'The Hogwarts',
+    title: 'Holy Roman Empire',
   },
   {
     id: 'world-2',
     imgUrl: '/planet-02.png',
-    title: 'The Upside Down',
+    title: 'Mongols',
   },
   {
     id: 'world-3',
     imgUrl: '/planet-03.png',
-    title: 'Kadirojo Permai',
+    title: 'France Kingdom',
   },
   {
     id: 'world-4',
     imgUrl: '/planet-04.png',
-    title: 'Paradise Island',
+    title: 'British Kingdom',
   },
   {
     id: 'world-5',
     imgUrl: '/planet-05.png',
-    title: 'Hawkins Labs',
+    title: 'Tsar of Russia',
   },
 ];
 
@@ -70,19 +70,18 @@ export const insights = [
 
 export const socials = [
   {
-    name: 'twitter',
-    url: '/twitter.svg',
-  },
-  {
-    name: 'linkedin',
-    url: '/linkedin.svg',
+    name: 'youtube',
+    url: '/youtube.svg',
+    href: 'https://www.youtube.com/@War_and_Wisdom'
   },
   {
     name: 'instagram',
     url: '/instagram.svg',
+    href: 'https://instagram.com/warandwisdomofficial?igshid=OGQ5ZDc2ODk2ZA=='
   },
   {
-    name: 'facebook',
-    url: '/facebook.svg',
+    name: 'discord',
+    url: '/discord.svg',
+    href: 'https://discord.com/invite/Uf5YjQwx26'
   },
 ];

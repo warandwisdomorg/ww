@@ -20,10 +20,10 @@ const Footer = () => (
     <div className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}>
       <div className='flex items-center justify-center lg:justify-between flex-wrap gap-5'>
         <h4 className='font-bold md:text-[64px] text-[44px] text-white'>War n Wisdom</h4>
-        <button type='button' className='flex items-center h-fit py-4 px-6 bg-[#25618b] rounded-[32px] gap-[12px]'>
+        <a href='https://www.youtube.com/@War_and_Wisdom' type='button' className='flex items-center h-fit py-4 px-6 bg-[#25618b] rounded-[32px] gap-[12px]'>
           <Image height={400} width={400} src="/headset.svg" alt="youtube" className='w-[24px] h-[24px] object-contain' />
           <span className='font-normal text-[16px] text-white'>Youtube</span>
-        </button>
+        </a>
       </div>
       <div className='flex flex-col'>
         <div className='mb-[50px] h-[2px] bg-white opacity-10' />
@@ -35,14 +35,15 @@ const Footer = () => (
         </p>
         <div className='flex gap-4'>
           {socials.map((item) => (
-            <Image
+            <a href={item.href} key={item.name}>
+              <Image
               height={400} 
               width={400}
-              key={item.name}
               src={item.url}
               alt={item.name}
               className='w-[24px] h-[24px] object-contain cursor-pointer'
-            />
+             />
+            </a>
           ))}
         </div>
       </div>
