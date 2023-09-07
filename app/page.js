@@ -7,11 +7,11 @@ const Page = () => (
     <ScrollToTop />
     <Navbar />
     <Hero />
-    <About />
     <Explore />
-    <GetStarted />
     <WhatsNew />
     <World />
+    <GetStarted />
+    <About />
     <Insights />
     <Feedback />
     <Footer />
