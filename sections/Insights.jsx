@@ -9,7 +9,7 @@ import { insights } from '../constants'
 
 const Insights = () => (
   <section className={`${styles.paddings} relative  my-40`}>
-    <div className='gradient-03 hidden lg:absolute' />
+    <div className='gradient-03 hidden lg:flex' />
     <motion.div
       variants={staggerContainer}
       initial="hidden"

@@ -9,6 +9,7 @@ import { socials } from '../constants';
 
 const Hero = () => (
   <section className={`${styles.yPaddings} sm:py-16 lg:px-6 lg:-mt-20 z-20`}>
+    <div className='gradient-02 z-0 w-[50%] hidden lg:flex' />
     <motion.div
       variants={staggerContainer}
       initial="hidden"

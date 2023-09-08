@@ -12,7 +12,7 @@ import Image from 'next/image';
 
 const WhatsNew = () => (
   <section className={`${styles.paddings} relative`}>
-    <div className='gradient-04 z-0 hidden lg:absolute' />
+    <div className='gradient-04 z-0 hidden lg:flex' />
     <motion.div
       variants={staggerContainer}
       initial="hidden"
