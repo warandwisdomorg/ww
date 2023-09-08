@@ -9,42 +9,42 @@ export default function DropdownMenu() {
 
   const scrolltoAbout = () => {
     window.scrollTo({
-      top: 700,
+      top: 925,
       behavior: 'smooth',
     })
   } 
 
   const scrolltoExplore = () => {
     window.scrollTo({
-      top: 2300,
+      top: 1750,
       behavior: 'smooth',
     })
   } 
 
   const scrolltoGetStarted = () => {
     window.scrollTo({
-      top: 3450,
+      top: 2550,
       behavior: 'smooth',
     })
   } 
 
   const scrollToWhatsNew = () => {
     window.scrollTo({
-      top: 4450,
+      top: 3650,
       behavior: 'smooth',
     })
   } 
 
   const scrolltoWorld = () => {
     window.scrollTo({
-      top: 5500,
+      top: 5000,
       behavior: 'smooth',
     })
   }
 
   const scrollToArticles = () => {
     window.scrollTo({
-      top: 6550,
+      top: 6850,
       behavior: 'smooth',
     })
   }
@@ -82,7 +82,7 @@ export default function DropdownMenu() {
                       active ? 'hero-gradient font-extrabold text-white' : 'text-gray-900'
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   >
-                    About
+                    Get Started
                   </button>
                 )}
               </Menu.Item>
@@ -94,7 +94,7 @@ export default function DropdownMenu() {
                       active ? 'hero-gradient font-extrabold text-white' : 'text-gray-900'
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   >
-                    Explore
+                    What's New
                   </button>
                 )}
               </Menu.Item>
@@ -108,7 +108,7 @@ export default function DropdownMenu() {
                       active ? 'hero-gradient font-extrabold text-white' : 'text-gray-900'
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   >
-                    Get Started
+                    Explore
                   </button>
                 )}
               </Menu.Item>
@@ -120,7 +120,7 @@ export default function DropdownMenu() {
                       active ? 'hero-gradient font-extrabold text-white' : 'text-gray-900'
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   >
-                    Whats New
+                    Join Our Community
                   </button>
                 )}
               </Menu.Item>
@@ -134,7 +134,7 @@ export default function DropdownMenu() {
                       active ? 'hero-gradient font-extrabold text-white' : 'text-gray-900'
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   >
-                    Join Our Community
+                    About
                   </button>
                 )}
               </Menu.Item>
